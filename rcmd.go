@@ -11,7 +11,7 @@ var version = "v0.0.1"
 
 func showHelp() {
 	const v = ` 
-Usage: rbatch [options] [FILE]
+Usage: rcmd [options] [FILE]
 
 Options:
   -h, --help            show this help message and exit
