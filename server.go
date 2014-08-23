@@ -23,16 +23,16 @@ func (s *Server) Run() error {
 	return http.ListenAndServe(s.Conf.Addr, server)
 }
 
-func (s *Server) initMiddleware(server *martini.ClassicMartini) {
-	server.Use(render.Renderer())
-	server.Use(martini.Recovery())
-}
-
 func (s *Server) initServer() *martini.ClassicMartini {
 	server := martini.Classic()
 	s.initMiddleware(server)
 	s.initRoutes(server)
 	return server
+}
+
+func (s *Server) initMiddleware(server *martini.ClassicMartini) {
+	server.Use(render.Renderer())
+	server.Use(martini.Recovery())
 }
 
 func (s *Server) initRoutes(server *martini.ClassicMartini) {
