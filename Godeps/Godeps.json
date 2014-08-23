@@ -1,11 +1,7 @@
 {
-	"ImportPath": "github.com/dann/homepi",
+	"ImportPath": "github.com/dann/rcmd",
 	"GoVersion": "go1.2.1",
 	"Deps": [
-		{
-			"ImportPath": "bitbucket.org/gmcbay/i2c",
-			"Rev": "1235f1776ee749f0eaeb6de69d8804a6dd70d9d5"
-		},
 		{
 			"ImportPath": "github.com/codegangsta/inject",
 			"Comment": "v1.0-rc1-4-g4b81725",
