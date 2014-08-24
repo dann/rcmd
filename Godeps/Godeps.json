@@ -1,6 +1,6 @@
 {
 	"ImportPath": "github.com/dann/rcmd",
-	"GoVersion": "go1.2.1",
+	"GoVersion": "go1.3.1",
 	"Deps": [
 		{
 			"ImportPath": "github.com/codegangsta/inject",
